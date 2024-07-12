@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES2022",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "allowSyntheticDefaultImports": false,
+        "esModuleInterop": false,
+        "declaration": true,
+        "incremental": true,
+        "tsBuildInfoFile": ".tsbuildinfo",
+        "outDir": "./dist",
+        "paths": {
+            "~/*": ["./src/*"],
+        },
+    },
+    "buildOptions": {
+        "incremental": true,
+    },
+    "include": ["./src"],
+}

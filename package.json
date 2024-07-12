@@ -1,0 +1,33 @@
+{
+  "name": "rearrange",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "https://github.com/faselbaum",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "scripts": {
+    "build": "tspc --build ./tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "5.5.3",
+    "ts-patch": "^3.2.1",
+    "prettier": "^3.3.2",
+    "eslint": "^9.6.0",
+    "@types/react": ">=17"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "packageManager": "pnpm@9.4.0"
+}
